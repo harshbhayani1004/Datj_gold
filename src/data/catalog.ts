@@ -1,0 +1,280 @@
+export type JewelleryProduct = {
+  id: number;
+  name: string;
+  category: 'Rings' | 'Necklaces' | 'Earrings' | 'Bangles' | 'Bridal' | 'Gifts';
+  slug: string;
+  price: number;
+  originalPrice?: number;
+  metal: 'Yellow Gold' | 'White Gold' | 'Rose Gold';
+  purity: '14KT' | '18KT' | '22KT';
+  image: string;
+  gallery: string[];
+  badge?: string;
+  rating: number;
+  reviews: number;
+  description: string;
+  details: string[];
+};
+
+const image = (id: string, width = 900, height = 1100) =>
+  `https://images.unsplash.com/${id}?w=${width}&h=${height}&fit=crop&auto=format&q=84`;
+
+export const products: JewelleryProduct[] = [
+  {
+    id: 1,
+    name: 'Aaranya Kundan Choker',
+    category: 'Necklaces',
+    slug: 'necklaces',
+    price: 145000,
+    originalPrice: 168000,
+    metal: 'Yellow Gold',
+    purity: '22KT',
+    image: image('photo-1599643478518-a784e5dc4c8f'),
+    gallery: [
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+      image('photo-1515562141207-5daf3b67b37d', 1000, 1000),
+      image('photo-1573408301185-9146fe634ad0', 1000, 1000),
+    ],
+    badge: 'New',
+    rating: 4.9,
+    reviews: 84,
+    description: 'A regal handcrafted choker with kundan-set brilliance and a soft antique-gold finish.',
+    details: ['22KT BIS hallmarked gold', 'Hand-set kundan stones', 'Adjustable silk dori', 'Certificate of authenticity'],
+  },
+  {
+    id: 2,
+    name: 'Elara Solitaire Ring',
+    category: 'Rings',
+    slug: 'rings',
+    price: 85000,
+    originalPrice: 94000,
+    metal: 'White Gold',
+    purity: '18KT',
+    image: image('photo-1605100804763-ebea4663b632'),
+    gallery: [
+      image('photo-1605100804763-ebea4663b632', 1000, 1000),
+      image('photo-1515562141207-5daf3b67b37d', 1000, 1000),
+      image('photo-1587999482114-19d0e1bc4e6f', 1000, 1000),
+    ],
+    badge: 'Bestseller',
+    rating: 4.9,
+    reviews: 132,
+    description: 'A luminous round solitaire framed by a precise pavé halo for a clean, enduring silhouette.',
+    details: ['18KT BIS hallmarked gold', 'IGI-certified lab-grown diamond', 'VS clarity and EF colour', 'Complimentary resizing'],
+  },
+  {
+    id: 3,
+    name: 'Noor Polki Drops',
+    category: 'Earrings',
+    slug: 'earrings',
+    price: 42000,
+    metal: 'Yellow Gold',
+    purity: '18KT',
+    image: image('photo-1535632066927-ab7c9ab60908'),
+    gallery: [
+      image('photo-1535632066927-ab7c9ab60908', 1000, 1000),
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+      image('photo-1602752250058-96ccda079f77', 1000, 1000),
+    ],
+    rating: 4.8,
+    reviews: 67,
+    description: 'Light-catching polki drops designed to move beautifully from intimate celebrations to grand evenings.',
+    details: ['18KT BIS hallmarked gold', 'Uncut polki setting', 'Comfort-fit push backs', 'Certificate of authenticity'],
+  },
+  {
+    id: 4,
+    name: 'Mehr Antique Bangles',
+    category: 'Bangles',
+    slug: 'bangles',
+    price: 120000,
+    originalPrice: 132000,
+    metal: 'Yellow Gold',
+    purity: '22KT',
+    image: image('photo-1611591437281-460bfbe1220a'),
+    gallery: [
+      image('photo-1611591437281-460bfbe1220a', 1000, 1000),
+      image('photo-1573408301185-9146fe634ad0', 1000, 1000),
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+    ],
+    badge: 'Limited',
+    rating: 4.9,
+    reviews: 46,
+    description: 'A pair of finely engraved bangles inspired by heirloom temple motifs and softened for modern wear.',
+    details: ['22KT BIS hallmarked gold', 'Sold as a pair', 'Hand-engraved finish', 'Lifetime exchange eligible'],
+  },
+  {
+    id: 5,
+    name: 'Anaisha Emerald Pendant',
+    category: 'Necklaces',
+    slug: 'necklaces',
+    price: 65000,
+    metal: 'Yellow Gold',
+    purity: '18KT',
+    image: image('photo-1602752250058-96ccda079f77'),
+    gallery: [
+      image('photo-1602752250058-96ccda079f77', 1000, 1000),
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+      image('photo-1587999482114-19d0e1bc4e6f', 1000, 1000),
+    ],
+    rating: 4.7,
+    reviews: 39,
+    description: 'A vivid emerald centre framed in fine diamonds and finished with a delicate adjustable chain.',
+    details: ['18KT BIS hallmarked gold', 'Natural emerald centre', 'Diamond halo', '18-inch adjustable chain'],
+  },
+  {
+    id: 6,
+    name: 'Tara Tennis Bracelet',
+    category: 'Bangles',
+    slug: 'bangles',
+    price: 180000,
+    originalPrice: 205000,
+    metal: 'White Gold',
+    purity: '18KT',
+    image: image('photo-1573408301185-9146fe634ad0'),
+    gallery: [
+      image('photo-1573408301185-9146fe634ad0', 1000, 1000),
+      image('photo-1611591437281-460bfbe1220a', 1000, 1000),
+      image('photo-1515562141207-5daf3b67b37d', 1000, 1000),
+    ],
+    badge: 'Bestseller',
+    rating: 4.9,
+    reviews: 91,
+    description: 'A fluid line of individually set diamonds with a secure clasp, made for effortless daily brilliance.',
+    details: ['18KT BIS hallmarked white gold', 'IGI-certified diamonds', 'Double-safety clasp', 'Custom length available'],
+  },
+  {
+    id: 7,
+    name: 'Ira Rose Gold Band',
+    category: 'Rings',
+    slug: 'rings',
+    price: 72000,
+    metal: 'Rose Gold',
+    purity: '18KT',
+    image: image('photo-1515562141207-5daf3b67b37d'),
+    gallery: [
+      image('photo-1515562141207-5daf3b67b37d', 1000, 1000),
+      image('photo-1605100804763-ebea4663b632', 1000, 1000),
+      image('photo-1587999482114-19d0e1bc4e6f', 1000, 1000),
+    ],
+    rating: 4.8,
+    reviews: 74,
+    description: 'A softly contoured diamond band in warm rose gold, designed to stack or shine on its own.',
+    details: ['18KT BIS hallmarked rose gold', 'Channel-set diamonds', 'Comfort-fit interior', 'Complimentary engraving'],
+  },
+  {
+    id: 8,
+    name: 'Saanvi Temple Necklace',
+    category: 'Bridal',
+    slug: 'bridal-sets',
+    price: 285000,
+    originalPrice: 310000,
+    metal: 'Yellow Gold',
+    purity: '22KT',
+    image: image('photo-1627293509201-cd0c780043e6'),
+    gallery: [
+      image('photo-1627293509201-cd0c780043e6', 1000, 1000),
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+      image('photo-1611591437281-460bfbe1220a', 1000, 1000),
+    ],
+    badge: 'Bridal',
+    rating: 5,
+    reviews: 31,
+    description: 'A ceremonial necklace shaped by classic temple iconography and finished with ruby-toned accents.',
+    details: ['22KT BIS hallmarked gold', 'Handcrafted temple motifs', 'Ruby-toned accents', 'Private bridal consultation included'],
+  },
+  {
+    id: 9,
+    name: 'Abeer Diamond Studs',
+    category: 'Earrings',
+    slug: 'earrings',
+    price: 58000,
+    metal: 'White Gold',
+    purity: '18KT',
+    image: image('photo-1572635196237-14b3f281503f'),
+    gallery: [
+      image('photo-1572635196237-14b3f281503f', 1000, 1000),
+      image('photo-1535632066927-ab7c9ab60908', 1000, 1000),
+      image('photo-1515562141207-5daf3b67b37d', 1000, 1000),
+    ],
+    rating: 4.8,
+    reviews: 108,
+    description: 'Minimal round diamond studs with secure screw backs and a low profile for everyday polish.',
+    details: ['18KT BIS hallmarked white gold', 'IGI-certified diamonds', 'Secure screw backs', 'Everyday comfort profile'],
+  },
+  {
+    id: 10,
+    name: 'Zoya Floral Cocktail Ring',
+    category: 'Rings',
+    slug: 'rings',
+    price: 96000,
+    originalPrice: 108000,
+    metal: 'Yellow Gold',
+    purity: '18KT',
+    image: image('photo-1587999482114-19d0e1bc4e6f'),
+    gallery: [
+      image('photo-1587999482114-19d0e1bc4e6f', 1000, 1000),
+      image('photo-1605100804763-ebea4663b632', 1000, 1000),
+      image('photo-1602752250058-96ccda079f77', 1000, 1000),
+    ],
+    badge: 'New',
+    rating: 4.7,
+    reviews: 28,
+    description: 'A sculptural floral ring with layered petals and a softly luminous diamond centre.',
+    details: ['18KT BIS hallmarked gold', 'Diamond floral setting', 'Statement scale', 'Made to order in your size'],
+  },
+  {
+    id: 11,
+    name: 'Anika Bridal Rani Haar',
+    category: 'Bridal',
+    slug: 'bridal-sets',
+    price: 420000,
+    metal: 'Yellow Gold',
+    purity: '22KT',
+    image: image('photo-1599643477877-530eb83abc8e'),
+    gallery: [
+      image('photo-1599643477877-530eb83abc8e', 1000, 1000),
+      image('photo-1627293509201-cd0c780043e6', 1000, 1000),
+      image('photo-1599643478518-a784e5dc4c8f', 1000, 1000),
+    ],
+    badge: 'Bridal',
+    rating: 5,
+    reviews: 19,
+    description: 'A long-form bridal haar balancing kundan geometry, pearl drops and richly worked gold.',
+    details: ['22KT BIS hallmarked gold', 'Kundan and pearl detailing', 'Made-to-measure', 'Private bridal consultation included'],
+  },
+  {
+    id: 12,
+    name: 'Mira Diamond Pendant',
+    category: 'Gifts',
+    slug: 'gifts',
+    price: 39000,
+    originalPrice: 45000,
+    metal: 'Rose Gold',
+    purity: '14KT',
+    image: image('photo-1602173574767-37ac01994b2a'),
+    gallery: [
+      image('photo-1602173574767-37ac01994b2a', 1000, 1000),
+      image('photo-1602752250058-96ccda079f77', 1000, 1000),
+      image('photo-1587999482114-19d0e1bc4e6f', 1000, 1000),
+    ],
+    badge: 'Gift pick',
+    rating: 4.8,
+    reviews: 63,
+    description: 'A delicate diamond pendant in rose gold, presented in our signature gift box.',
+    details: ['14KT BIS hallmarked rose gold', 'Certified diamonds', 'Adjustable chain', 'Complimentary gift packaging'],
+  },
+];
+
+export const categoryTiles = [
+  { label: 'Rings', slug: 'rings', image: products[1].image },
+  { label: 'Necklaces', slug: 'necklaces', image: products[0].image },
+  { label: 'Earrings', slug: 'earrings', image: products[2].image },
+  { label: 'Bangles', slug: 'bangles', image: products[3].image },
+  { label: 'Bridal', slug: 'bridal-sets', image: products[10].image },
+  { label: 'Gifts', slug: 'gifts', image: products[11].image },
+];
+
+export const formatPrice = (value: number) => `₹${value.toLocaleString('en-IN')}`;
+
+export const findProduct = (id?: string) =>
+  products.find((product) => String(product.id) === id) ?? products[1];
