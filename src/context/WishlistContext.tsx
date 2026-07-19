@@ -24,7 +24,7 @@ const WishlistContext = createContext<WishlistContextType | undefined>(undefined
 export function WishlistProvider({ children }: { children: ReactNode }) {
   const [wishlist, setWishlist] = useState<WishlistItem[]>(() => {
     try {
-      const stored = localStorage.getItem('ruprays_wishlist');
+      const stored = localStorage.getItem('datjgold_wishlist');
       return stored ? JSON.parse(stored) : [];
     } catch {
       return [];
@@ -32,7 +32,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   });
 
   useEffect(() => {
-    localStorage.setItem('ruprays_wishlist', JSON.stringify(wishlist));
+    localStorage.setItem('datjgold_wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
 
   const addToWishlist = (item: WishlistItem) => {

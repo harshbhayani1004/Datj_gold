@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const values = [
   { icon: ShieldCheck, title: 'Purity, made visible', body: 'Every gold piece is BIS hallmarked, every diamond is certified, and every invoice is transparent.' },
-  { icon: Gem, title: 'Craft before scale', body: 'Our pieces pass through specialist hands—setting, polishing and finishing—before they carry the Ruprays name.' },
+  { icon: Gem, title: 'Craft before scale', body: 'Our pieces pass through specialist hands—setting, polishing and finishing—before they carry the Datj Gold name.' },
   { icon: Sparkles, title: 'Designed for real lives', body: 'We balance ceremonial richness with comfort, proportion and the quiet confidence of everyday wear.' },
 ];
 
@@ -11,13 +11,13 @@ export default function AboutRedesign() {
   return (
     <div className="bg-[#f5f2ea] text-[#1c2b36]">
       <section className="relative min-h-[700px] overflow-hidden bg-[#0b1b2a] pt-28 text-white">
-        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&h=1100&fit=crop&auto=format&q=88" alt="Ruprays fine jewellery" className="absolute inset-0 h-full w-full object-cover opacity-55" />
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&h=1100&fit=crop&auto=format&q=88" alt="Datj Gold fine jewellery" className="absolute inset-0 h-full w-full object-cover opacity-55" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b1b2a]/95 via-[#13293d]/65 to-transparent" />
         <div className="relative mx-auto flex min-h-[590px] max-w-[1500px] items-end px-5 pb-20 md:px-10">
           <div className="max-w-3xl">
             <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#d7c59a]">Our story</p>
             <h1 className="font-serif text-6xl leading-[.87] md:text-8xl lg:text-9xl">Jewellery with<br /><span className="italic text-[#d7c59a]">a sense of belonging.</span></h1>
-            <p className="mt-8 max-w-xl text-base leading-8 text-white/65">Ruprays brings together Indian goldsmithing traditions, contemporary proportion and a deeply personal way of serving every customer.</p>
+            <p className="mt-8 max-w-xl text-base leading-8 text-white/65">Datj Gold brings together Indian goldsmithing traditions, contemporary proportion and a deeply personal way of serving every customer.</p>
           </div>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function AboutRedesign() {
             <p className="eyebrow">From Jaipur, with care</p>
             <h2 className="font-serif text-5xl leading-[.95] md:text-7xl">A modern house,<br /><span className="italic text-[#506c63]">rooted in craft.</span></h2>
             <div className="mt-8 space-y-6 text-sm leading-7 text-[#63717a] md:text-base md:leading-8">
-              <p>Ruprays began as a small family workshop in Jaipur in 1995, built on an uncomplicated promise: precious materials should be matched by honest guidance and exceptional making.</p>
+              <p>Datj Gold began as a small family workshop in Jaipur in 1995, built on an uncomplicated promise: precious materials should be matched by honest guidance and exceptional making.</p>
               <p>Today, that promise lives online and in our atelier. Our designers reinterpret the geometry, colour and ceremony of Indian jewellery into pieces that feel relevant now—and worthy of being passed forward.</p>
               <p>We believe luxury is not about excess. It is the quiet assurance of knowing who made your piece, what it is made from, and that it was created to wear beautifully for years.</p>
             </div>

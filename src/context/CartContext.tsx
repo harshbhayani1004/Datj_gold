@@ -34,7 +34,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Load cart from localStorage on mount
   useEffect(() => {
-    const savedCart = localStorage.getItem('ruprays_cart');
+    const savedCart = localStorage.getItem('datjgold_cart');
     if (savedCart) {
       try {
         setCartItems(JSON.parse(savedCart));
@@ -46,7 +46,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Save to localStorage whenever cart changes
   useEffect(() => {
-    localStorage.setItem('ruprays_cart', JSON.stringify(cartItems));
+    localStorage.setItem('datjgold_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addToCart = (item: Omit<CartItem, 'quantity'> & { quantity?: number }) => {

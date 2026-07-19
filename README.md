@@ -1,6 +1,6 @@
-# Ruprays classic redesign
+# Datj Gold classic redesign
 
-An independent redesign of the Ruprays jewellery storefront. The original project in `D:\websites\ruprays` is not modified.
+An independent redesign of the Datj Gold jewellery storefront. The original project in `D:\websites\ruprays` is not modified.
 
 ## Direction
 

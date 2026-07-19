@@ -20,7 +20,7 @@ export default function LoginRedesign() {
   return (
     <div className="grid min-h-[720px] bg-[#f5f2ea] lg:grid-cols-2">
       <div className="relative hidden overflow-hidden lg:block">
-        <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1100&h=1200&fit=crop&auto=format&q=86" alt="Ruprays jewellery" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1100&h=1200&fit=crop&auto=format&q=86" alt="Datj Gold jewellery" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1b2a]/85 via-transparent to-[#0b1b2a]/10" />
         <div className="absolute bottom-14 left-14 max-w-lg text-white">
           <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#d7c59a]">Your private jewellery box</p>
@@ -30,9 +30,9 @@ export default function LoginRedesign() {
 
       <div className="flex items-center justify-center px-5 py-20 md:px-10">
         <div className="w-full max-w-md">
-          <p className="eyebrow">{registering ? 'Join Ruprays' : 'Welcome back'}</p>
+          <p className="eyebrow">{registering ? 'Join Datj Gold' : 'Welcome back'}</p>
           <h1 className="font-serif text-5xl">{registering ? 'Create your account' : 'Sign in to your account'}</h1>
-          <p className="mt-4 text-sm leading-7 text-[#66747c]">{registering ? 'Keep your favourites close and enjoy a more personal Ruprays experience.' : 'Your saved jewellery and shopping bag are waiting.'}</p>
+          <p className="mt-4 text-sm leading-7 text-[#66747c]">{registering ? 'Keep your favourites close and enjoy a more personal Datj Gold experience.' : 'Your saved jewellery and shopping bag are waiting.'}</p>
 
           <form onSubmit={submit} className="mt-9 space-y-5">
             {registering && (
@@ -57,7 +57,7 @@ export default function LoginRedesign() {
           </form>
 
           <p className="mt-8 text-center text-sm text-[#66747c]">
-            {registering ? 'Already have an account?' : 'New to Ruprays?'}
+            {registering ? 'Already have an account?' : 'New to Datj Gold?'}
             <button type="button" onClick={() => setRegistering(!registering)} className="ml-2 font-semibold text-[#18384e] underline underline-offset-4">{registering ? 'Sign in' : 'Create account'}</button>
           </p>
           <div className="mt-8 text-center"><Link to="/" className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#6f7a80]">Return to the shop</Link></div>

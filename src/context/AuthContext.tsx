@@ -24,7 +24,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Load user from localStorage
   useEffect(() => {
-    const savedUser = localStorage.getItem('ruprays_user');
+    const savedUser = localStorage.getItem('datjgold_user');
     if (savedUser) {
         setUser(JSON.parse(savedUser));
     }
@@ -33,13 +33,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const login = (email: string, name?: string) => {
     const newUser = { email, name: name || email.split('@')[0] };
     setUser(newUser);
-    localStorage.setItem('ruprays_user', JSON.stringify(newUser));
+    localStorage.setItem('datjgold_user', JSON.stringify(newUser));
     setIsAuthModalOpen(false); // Close modal on success
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('ruprays_user');
+    localStorage.removeItem('datjgold_user');
   };
 
   const openAuthModal = () => setIsAuthModalOpen(true);

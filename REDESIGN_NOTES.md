@@ -1,4 +1,4 @@
-# Ruprays website audit and redesign
+# Datj Gold website audit and redesign
 
 ## Isolation
 

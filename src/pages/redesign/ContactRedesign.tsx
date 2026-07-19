@@ -9,7 +9,7 @@ export default function ContactRedesign() {
       <section className="grid min-h-[700px] pt-28 lg:grid-cols-2">
         <div className="flex items-center bg-[#13293d] px-5 py-20 text-white md:px-10 lg:px-[8vw]">
           <div className="max-w-xl">
-            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#d7c59a]">Ruprays Concierge</p>
+            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#d7c59a]">Datj Gold Concierge</p>
             <h1 className="font-serif text-6xl leading-[.88] md:text-8xl">Let’s find what<br /><span className="italic text-[#d7c59a]">feels like you.</span></h1>
             <p className="mt-8 max-w-lg text-base leading-8 text-white/65">Book a private appointment, ask about a piece, or begin a custom design. Our jewellery experts are here to help.</p>
 
@@ -19,10 +19,10 @@ export default function ContactRedesign() {
                 <p className="text-[10px] uppercase tracking-[0.18em] text-white/40">Call us</p>
                 <p className="mt-2 text-sm">+91 98765 43210</p>
               </a>
-              <a href="mailto:concierge@ruprays.com" className="rounded-sm border border-white/15 p-5 transition hover:border-[#d7c59a]">
+              <a href="mailto:concierge@datjgold.com" className="rounded-sm border border-white/15 p-5 transition hover:border-[#d7c59a]">
                 <Mail className="mb-6 h-5 w-5 text-[#d7c59a]" />
                 <p className="text-[10px] uppercase tracking-[0.18em] text-white/40">Email</p>
-                <p className="mt-2 text-sm">concierge@ruprays.com</p>
+                <p className="mt-2 text-sm">concierge@datjgold.com</p>
               </a>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function ContactRedesign() {
               <div className="rounded-md bg-white p-9 text-center shadow-sm md:p-12">
                 <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[#13293d] text-white"><Check className="h-6 w-6" /></div>
                 <h2 className="mt-7 font-serif text-4xl">Your request is with us.</h2>
-                <p className="mt-4 text-sm leading-7 text-[#66747c]">A Ruprays concierge will get back to you within one business day.</p>
+                <p className="mt-4 text-sm leading-7 text-[#66747c]">A Datj Gold concierge will get back to you within one business day.</p>
                 <button type="button" onClick={() => setSubmitted(false)} className="lux-button mt-8">Send another enquiry</button>
               </div>
             ) : (

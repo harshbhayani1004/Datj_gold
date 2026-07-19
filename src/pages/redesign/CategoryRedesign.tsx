@@ -43,7 +43,7 @@ const collectionCopy: Record<string, { title: string; eyebrow: string; body: str
   },
   featured: {
     title: 'All Jewellery',
-    eyebrow: 'The Ruprays collection',
+    eyebrow: 'The Datj Gold collection',
     body: 'Explore modern icons and heirloom-inspired designs across fine gold, diamonds and precious stones.',
     image: products[4].image,
   },

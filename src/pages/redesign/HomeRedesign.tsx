@@ -5,7 +5,7 @@ import { categoryTiles, products } from '../../data/catalog';
 
 const promises = [
   { icon: ShieldCheck, title: 'Certified purity', body: 'BIS hallmarked gold and independently certified diamonds.' },
-  { icon: RefreshCcw, title: 'Lifetime exchange', body: 'Transparent exchange value on eligible Ruprays jewellery.' },
+  { icon: RefreshCcw, title: 'Lifetime exchange', body: 'Transparent exchange value on eligible Datj Gold jewellery.' },
   { icon: Truck, title: 'Insured delivery', body: 'Complimentary, tamper-proof shipping across India.' },
   { icon: Gem, title: 'Jewellery concierge', body: 'Real guidance on fit, gifting and customisation.' },
 ];
@@ -151,7 +151,7 @@ export default function HomeRedesign() {
       <section className="bg-[#0b1b2a] px-5 py-20 text-white md:px-10 lg:py-28">
         <div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[.78fr_1.22fr] lg:items-center">
           <div>
-            <p className="eyebrow !text-[#c2aa78]">The Ruprays promise</p>
+            <p className="eyebrow !text-[#c2aa78]">The Datj Gold promise</p>
             <h2 className="font-serif text-5xl leading-[.95] md:text-7xl">Real jewellery.<br /><span className="italic text-[#c2aa78]">Real confidence.</span></h2>
             <p className="mt-7 max-w-md text-sm leading-7 text-white/55">Every detail—from purity to delivery—is designed to make buying fine jewellery online feel wonderfully certain.</p>
           </div>
@@ -170,10 +170,10 @@ export default function HomeRedesign() {
       <section className="px-5 py-20 md:px-10 lg:py-28">
         <div className="mx-auto grid max-w-[1500px] overflow-hidden rounded-md bg-[#e7ebe3] lg:grid-cols-2">
           <div className="min-h-[520px]">
-            <img src="https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?w=1100&h=1000&fit=crop&auto=format&q=86" alt="Ruprays bridal jewellery craftsmanship" className="h-full w-full object-cover" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?w=1100&h=1000&fit=crop&auto=format&q=86" alt="Datj Gold bridal jewellery craftsmanship" className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div className="flex flex-col justify-center p-9 md:p-16 lg:p-20">
-            <p className="eyebrow">Ruprays Atelier</p>
+            <p className="eyebrow">Datj Gold Atelier</p>
             <h2 className="font-serif text-5xl leading-[.95] md:text-6xl">Your idea,<br /><span className="italic text-[#506c63]">made precious.</span></h2>
             <p className="mt-7 max-w-lg text-sm leading-7 text-[#63717a]">Meet our design experts to personalise a piece, adapt an heirloom or create a bridal set around your celebration.</p>
             <Link to="/contact" className="mt-9 inline-flex w-fit items-center gap-3 border-b border-[#18384e] pb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#18384e]">

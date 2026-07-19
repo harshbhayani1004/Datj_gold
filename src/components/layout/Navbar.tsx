@@ -87,8 +87,8 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link to="/" className={`group text-center ${foreground}`} aria-label="Ruprays home">
-              <span className="block font-serif text-[25px] font-semibold leading-none tracking-[0.2em]">RUPRAYS</span>
+            <Link to="/" className={`group text-center ${foreground}`} aria-label="Datj Gold home">
+              <span className="block font-serif text-[25px] font-semibold leading-none tracking-[0.2em]">DATJ GOLD</span>
               <span className={`mt-1.5 block text-[7px] font-semibold uppercase tracking-[0.38em] ${transparent ? 'text-white/55' : 'text-[#6f7a80]'}`}>
                 Fine Jewellery
               </span>
@@ -139,7 +139,7 @@ export default function Navbar() {
         <button type="button" aria-label="Close menu" onClick={() => setMobileOpen(false)} className="absolute inset-0 bg-[#0b1b2a]/65 backdrop-blur-sm" />
         <aside className={`relative flex h-full w-[min(88vw,390px)] flex-col bg-[#f8f6f0] px-7 py-7 text-[#1c2b36] shadow-2xl transition duration-300 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="flex items-center justify-between border-b border-[#18384e]/10 pb-6">
-            <Link to="/" className="font-serif text-2xl tracking-[0.2em]">RUPRAYS</Link>
+            <Link to="/" className="font-serif text-2xl tracking-[0.2em]">DATJ GOLD</Link>
             <button type="button" onClick={() => setMobileOpen(false)} aria-label="Close menu" className="grid h-10 w-10 place-items-center border border-[#18384e]/15">
               <X className="h-4 w-4" />
             </button>
