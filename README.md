@@ -1,27 +1,47 @@
-# Datj Gold classic redesign
+# Datj Gold
 
-An independent redesign of the Datj Gold jewellery storefront. The original project in `D:\websites\ruprays` is not modified.
+A modern storefront for Datj Gold — fine gold and diamond jewellery, BIS hallmarked and handcrafted in India. Built as a fast, responsive React application with a clean, editorial retail experience.
 
-## Direction
+## Highlights
 
-- Classic, minimal and editorial rather than trend-led
-- Warm ivory, ink navy, muted sage and antique gold
-- No red, pink, burgundy, purple or neon interface colours
-- Restrained corners, clearer hierarchy and calmer merchandising
-- Responsive shopping journeys with local cart, wishlist and demo account state
+- Classic, minimal and editorial visual language
+- Warm ivory, ink navy, muted sage and antique gold palette
+- Restrained corners, clear hierarchy and calm merchandising
+- Fully responsive shopping journeys with persistent cart, wishlist and account state
 
-## Pages
+## Features
 
-- Home and category-led discovery
-- Collection filters and sorting
-- Product detail, options, delivery check and related products
+- Home and category-led product discovery
+- Collection browsing with filters and sorting
+- Product detail pages with options, delivery checks and related products
 - Shopping bag and wishlist
-- Sign in and registration
-- Our story
-- Concierge and appointment request
+- Account sign in and registration
+- Brand story
+- Concierge and appointment requests
 
-## Local scripts
+## Tech stack
 
-- `npm run dev`
-- `npm run build`
-- `npm run lint`
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Type-check and build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run linting |
+
+## License
+
+Proprietary — all rights reserved.
